@@ -4,7 +4,6 @@ var dizi3 = [1, 2, 3, 6, 9, 8, 7, 4];
 var dizi5 = [];
 var dizi4 = [[1, 1], [2, 2], [3, 3], [4, 4], [6, 6], [7, 7], [8, 8], [9, 9]];
 text = "";
-var dizi2 = [[0, 0], [0, 48], [0, 96], [48, 96], [96, 96], [96, 48], [96, 0], [48, 0]];
 
 function dondur() {
     var son = dizi.pop();
@@ -35,12 +34,6 @@ function dondur() {
     }
     document.getElementById("btns").innerHTML = text;
     text = "";
-    //dizi2.forEach((arr) => {
-      //  var y = "#btn" + dizi[i];
-        //var baton = document.querySelector(y);
-        //baton.style = "top:" + arr[0] + "px; left:" + arr[1] + "px ";
-        //i++;
-    //}
     
 }
 
