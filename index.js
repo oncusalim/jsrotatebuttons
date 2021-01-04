@@ -8,13 +8,11 @@ text = "";
 function dondur() {
     var son = dizi.pop();
     dizi.unshift(son);
-   
+
     var i2 = 0;
     for (i2 = 0; i2 < 8; i2++) {
         dizi5[i2] = [dizi3[i2], dizi[i2]];
     }
-   
-
 
     var i3 = 1;
     var i4 = 0;
@@ -23,18 +21,16 @@ function dondur() {
             if (i3 == dizi5[i4][0]) {
                 text += '<button class="btn" id ="btn' + dizi5[i4][1] + '">' + dizi5[i4][1] + '</button>';
             }
-            
+
         }
         if (i3 == 5) {
-                text += '<button class="btn" id ="btn5" onclick="dondur()">5</button>';
-               
-            }
+            text += '<button class="btn" id ="btn5" onclick="dondur()">5</button>';
 
+        }
 
     }
     document.getElementById("btns").innerHTML = text;
     text = "";
-    
 }
 
 dizi4.forEach((arr) => {
